@@ -1,4 +1,4 @@
-# Create blog document for "Exporting Blazor Charts: Saving as Image, PDF, and Excel"
+# Exporting Blazor Charts: Saving as Image, PDF, and Excel
 
 The Syncfusion Blazor Charts component provides built-in support to export charts in various formats, such as image (PNG, JPEG, SVG), PDF, and Excel (XLSX). These export options can be triggered through simple function calls and customized using event handlers like OnExportComplete.
 
