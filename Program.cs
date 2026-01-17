@@ -1,4 +1,4 @@
-using ExportChart.Components;
+using ExportingChart.Components;
 using Syncfusion.Blazor;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddSyncfusionBlazor();
+builder.Services.AddServerSideBlazor().AddHubOptions(o =>
+{
+    o.MaximumReceiveMessageSize = 102400000;
+});  // Increase the maximum message size
 
 var app = builder.Build();
 
